@@ -15,7 +15,7 @@ export default class Input extends Block {
     constructor({ placeholder, type = 'text', value='' }) {
         super();
 
-        this.el.classList.toggle('input', true);
+        this.el.classList.toggle('input');
         this.el.type  = type;
         this.el.placeholder = placeholder;
         this.el.value = value;

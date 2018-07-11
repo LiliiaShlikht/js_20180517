@@ -13,6 +13,9 @@ export default class List extends Block {
     constructor( users = [] ) {
         super();
 
+        this.el.classList.toggle('ulList');
+        this.el.classList.toggle('li');
+
         for(let user of users){
             let userName = document.createElement('li');
             userName.innerHTML = user;

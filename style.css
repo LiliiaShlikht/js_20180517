@@ -1,11 +1,42 @@
-.button-success {
-    background: rgb(28, 184, 65); /* this is a green */
-}
 
-.button-warning {
-    background: rgb(223, 117, 20); /* this is an orange */
-}
-
-.button, .list, .input, .messages, .textarea {
+.button, .list, .form, .input, .messages, .textarea, .ulList, .messages, .p {
     margin: 20px;
+}
+
+.button, .textarea {
+    border-radius: 10px;
+}
+.button { width: 115px;}
+
+.button-success {
+    background: #3FBF7F;
+}
+
+.button-secondary {
+    background: #D0FADE;
+}
+
+.textarea {
+    width: 210px;
+    height: 150px;
+    padding: 5px;
+    background: #FAF3D0;
+}
+
+.ulList {
+    width: 200px;
+    height: 220px;
+    border: 2px solid rgba(0,0,0, .2);
+}
+
+.li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.messages {
+    padding: 10px;
+    width: 200px;
+    height: 220px;
+    border: 2px solid rgba(0,0,0, .2);
 }
