@@ -1,4 +1,5 @@
 import Block from '../block';
+import template from './message.pug';
 
 export default class Messages extends Block {
 
@@ -15,14 +16,20 @@ export default class Messages extends Block {
 
         this.el.classList.toggle('messages');
 
-        let message = document.createElement('h1');
-        message.innerHTML = 'Chat';
-        this.el.appendChild(message);
+        this.el.innerHTML = template({
+            text: messages['text'],
+            author: messages['author']
+        });
 
-        for(let mes of messages){
-            let newMes = document.createElement('p');
-            newMes.innerHTML = mes;
-            this.el.appendChild(newMes);
-        }
+
+        // let message = document.createElement('h1');
+        // message.innerHTML = 'Chat';
+        // this.el.appendChild(message);
+
+        // for(let mes of messages){
+        //     let newMes = document.createElement('p');
+        //     newMes.innerHTML = mes;
+        //     this.el.appendChild(newMes);
+        // }
     }
 }

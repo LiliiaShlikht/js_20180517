@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
         placeholder: 'Введите сюда свое сообщение'
     });
 
-    let messages = new Messages(["New message", "One more message"]);
+    let messages = new Messages({text:"Мое сообщение", author: "Liliya", myMessage: true});
 
     buttonLogin.append(document.body);
     buttonReg.append(document.body);
